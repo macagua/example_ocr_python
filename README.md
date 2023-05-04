@@ -8,4 +8,4 @@ There are the following examples supported:
 
 - [images](images/) Examples.
 
-- [pdf](pdf/) Examples.
+- [pdfs](pdfs/) Examples.
