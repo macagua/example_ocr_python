@@ -7,3 +7,5 @@ Examples for OCR (Optical Character Recognition) in Python
 There are the following examples supported:
 
 - [images](images/) Examples.
+
+- [pdf](pdf/) Examples.
