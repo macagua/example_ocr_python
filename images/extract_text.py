@@ -6,8 +6,9 @@ Source:
 """
 
 import os
-from pytesseract import image_to_string
+
 from PIL import Image
+from pytesseract import image_to_string
 
 # Path of the input image
 DATA_PATH = os.path.dirname(os.path.abspath(__file__)) +\

@@ -7,9 +7,10 @@ Source:
 
 import os
 from tempfile import TemporaryDirectory
+
+from pdf2image import convert_from_path
 from PIL import Image
 from pytesseract import image_to_string
-from pdf2image import convert_from_path
 
 # Path of the Input pdf
 DATA_PATH = os.path.dirname(os.path.abspath(__file__)) +\
