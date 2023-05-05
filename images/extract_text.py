@@ -18,12 +18,12 @@ TEXT_FILE = DATA_PATH + f"{FILE_NAME}.txt"
 
 # Open the file in append mode so that
 # All contents of an image are added to the same file
-with open(TEXT_FILE, "a") as output_file:
+with open(TEXT_FILE, "a", encoding="utf-8") as output_file:
     # Recognize the text as string in image using pytesserct
-    text = str(((image_to_string(Image.open(IMG_FILE)))))
+    TEXT_EXTRACTED = str(((image_to_string(Image.open(IMG_FILE)))))
 
     # To remove this, we replace every '-\n' to ''.
-    text = text.replace("-\n", "")
+    TEXT_EXTRACTED = TEXT_EXTRACTED.replace("-\n", "")
 
     # Finally, write the processed text to the file.
-    output_file.write(text)
+    output_file.write(TEXT_EXTRACTED)

@@ -6,9 +6,9 @@ Source:
 """
 
 import os
+from tempfile import TemporaryDirectory
 from PIL import Image
 from pytesseract import image_to_string
-from tempfile import TemporaryDirectory
 from pdf2image import convert_from_path
 
 # Path of the Input pdf
@@ -42,17 +42,17 @@ with TemporaryDirectory() as temp_dir:
     # Part 2 - START: Recognizing text from the images using OCR
     # Open the file in append mode so that
     # All contents of all images are added to the same file
-    with open(TEXT_FILE, "a") as output_file:
+    with open(TEXT_FILE, "a", encoding="utf-8") as output_file:
 
         # Iterate from 1 to total number of pages
         for image_file in image_file_list:
 
             # Recognize the text as string in image using pytesserct
-            text = str(((image_to_string(Image.open(image_file)))))
+            TEXT_EXTRACTED = str(((image_to_string(Image.open(image_file)))))
 
             # To remove this, we replace every '-\n' to ''.
-            text = text.replace("-\n", "")
+            TEXT_EXTRACTED = TEXT_EXTRACTED.replace("-\n", "")
 
             # Finally, write the processed text to the file.
-            output_file.write(text)
+            output_file.write(TEXT_EXTRACTED)
     # Part 2 - END
