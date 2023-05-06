@@ -13,7 +13,7 @@ from pytesseract import image_to_string
 # Path of the input image
 DATA_PATH = os.path.dirname(os.path.abspath(__file__)) +\
     os.sep + "data" + os.sep
-FILE_NAME = 'invoice_parts'
+FILE_NAME = "invoice_parts"
 IMG_FILE = DATA_PATH + f"{FILE_NAME}.jpg"
 TEXT_FILE = DATA_PATH + f"{FILE_NAME}.txt"
 

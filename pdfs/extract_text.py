@@ -15,7 +15,7 @@ from pytesseract import image_to_string
 # Path of the Input pdf
 DATA_PATH = os.path.dirname(os.path.abspath(__file__)) +\
     os.sep + "data" + os.sep
-FILE_NAME = 'invoice_parts'
+FILE_NAME = "invoice_parts"
 PDF_FILE = DATA_PATH + f"{FILE_NAME}.pdf"
 TEXT_FILE = DATA_PATH + f"{FILE_NAME}.txt"
 
@@ -44,10 +44,8 @@ with TemporaryDirectory() as temp_dir:
     # Open the file in append mode so that
     # All contents of all images are added to the same file
     with open(TEXT_FILE, "a", encoding="utf-8") as output_file:
-
         # Iterate from 1 to total number of pages
         for image_file in image_file_list:
-
             # Recognize the text as string in image using pytesserct
             TEXT_EXTRACTED = str(((image_to_string(Image.open(image_file)))))
 
