@@ -1,4 +1,4 @@
-# examples_python_ocr
+# examples_ocr_python
 
 Examples for OCR (Optical Character Recognition) in Python
 
