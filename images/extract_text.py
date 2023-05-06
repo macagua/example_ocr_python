@@ -23,7 +23,7 @@ TEXT_FILE = DATA_PATH + f"{FILE_NAME}.txt"
 # All contents of an image are added to the same file
 with open(TEXT_FILE, "a", encoding="utf-8") as output_file:
     # Recognize the text as string in image using pytesserct
-    TEXT_EXTRACTED = str(((image_to_string(Image.open(IMG_FILE)))))
+    TEXT_EXTRACTED = str(((image_to_string(Image.open(IMG_FILE), lang='eng+spa'))))
 
     # To remove this, we replace every '-\n' to ''.
     TEXT_EXTRACTED = TEXT_EXTRACTED.replace("-\n", "")

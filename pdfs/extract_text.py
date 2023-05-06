@@ -49,7 +49,7 @@ with TemporaryDirectory() as temp_dir:
         # Iterate from 1 to total number of pages
         for image_file in image_file_list:
             # Recognize the text as string in image using pytesserct
-            TEXT_EXTRACTED = str(((image_to_string(Image.open(image_file)))))
+            TEXT_EXTRACTED = str(((image_to_string(Image.open(image_file), lang='eng+spa'))))
 
             # To remove this, we replace every '-\n' to ''.
             TEXT_EXTRACTED = TEXT_EXTRACTED.replace("-\n", "")
