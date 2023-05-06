@@ -1,4 +1,6 @@
-"""Program for extract text using OCR (Optical Character Recognition)
+"""Program for extract text since pdf files.
+
+Program for extract text using OCR (Optical Character Recognition)
 technique since pdf files
 
 Source:
