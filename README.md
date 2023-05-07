@@ -9,3 +9,7 @@ There are the following examples supported:
 - [images](images/) Examples.
 
 - [pdfs](pdfs/) Examples.
+
+## Development
+
+Checkout the Development note at [DEVELOP.md](doc/DEVELOP.md).
