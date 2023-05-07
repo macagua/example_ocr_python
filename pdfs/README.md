@@ -11,7 +11,7 @@ sudo apt install tesseract-ocr
 virtualenv venv
 source venv/bin/activate
 pip install -U pip
-pip install -r requirements.txt
+pip install -r requirements/pdfs.txt
 cd pdfs
 ```
 

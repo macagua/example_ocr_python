@@ -10,7 +10,7 @@ sudo apt-get install build-essential pkg-config python3-dev
 virtualenv venv
 source venv/bin/activate
 pip install -U pip
-pip install -r requirements.txt
+pip install -r requirements/base.txt
 cd images
 ```
 
