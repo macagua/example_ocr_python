@@ -81,10 +81,17 @@ python -m black --help
 
 Examples of the use:
 
+Check the Python module without made changes it:
+
 ```console
 python -m black images/extract_text.py --check
-python -m black images/extract_text.py
 python -m black pdfs/extract_text.py --check
+```
+
+Fix the Python module:
+
+```console
+python -m black images/extract_text.py
 python -m black pdfs/extract_text.py
 ```
 
@@ -99,7 +106,6 @@ python -m pydocstyle --help
 Examples of the use:
 
 ```console
-python -m pydocstyle --help
 python -m pydocstyle images/extract_text.py
 python -m pydocstyle pdfs/extract_text.py
 ```
