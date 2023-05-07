@@ -1,4 +1,4 @@
--e base.txt
+-r base.txt
 
 python-poppler==0.4.1
 pdf2image==1.16.3
