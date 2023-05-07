@@ -10,6 +10,12 @@ There are the following examples supported:
 
 - [pdfs](pdfs/) Examples.
 
+## Tested it with
+
+- Python 3.8.16
+
+- Ubuntu 20.04.6 LTS.
+
 ## Development
 
-Checkout the Development note at [DEVELOP.md](doc/DEVELOP.md).
+Checkout the Development notes at [DEVELOP.md](doc/DEVELOP.md).
