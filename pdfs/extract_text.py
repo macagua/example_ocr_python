@@ -6,7 +6,6 @@ technique since pdf files
 Source:
     https://www.geeksforgeeks.org/python-reading-contents-of-pdf-using-ocr-optical-character-recognition/
 """
-
 import os
 from tempfile import TemporaryDirectory
 
@@ -15,8 +14,7 @@ from PIL import Image
 from pytesseract import image_to_string
 
 # Path of the Input pdf
-DATA_PATH = os.path.dirname(os.path.abspath(__file__)) +\
-    os.sep + "data" + os.sep
+DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + os.sep + "data" + os.sep
 FILE_NAME = "invoice_parts"
 PDF_FILE = DATA_PATH + f"{FILE_NAME}.pdf"
 TEXT_FILE = DATA_PATH + f"{FILE_NAME}.txt"
@@ -49,7 +47,9 @@ with TemporaryDirectory() as temp_dir:
         # Iterate from 1 to total number of pages
         for image_file in image_file_list:
             # Recognize the text as string in image using pytesserct
-            TEXT_EXTRACTED = str(((image_to_string(Image.open(image_file), lang='eng+spa'))))
+            TEXT_EXTRACTED = str(
+                image_to_string(Image.open(image_file), lang="eng+spa")
+            )
 
             # To remove this, we replace every '-\n' to ''.
             TEXT_EXTRACTED = TEXT_EXTRACTED.replace("-\n", "")
