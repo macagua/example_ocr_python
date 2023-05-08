@@ -56,3 +56,7 @@ tabulate==0.9.0
 tenacity==8.2.2
 traitlets==5.9.0
 zipp==3.15.0
+pre-commit==3.2.2
+cfgv==3.3.1
+identify==2.5.24
+nodeenv==1.7.0

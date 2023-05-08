@@ -9,6 +9,7 @@ virtualenv venv
 source venv/bin/activate
 pip install -U pip
 pip install -r requirements/dev.txt
+pre-commit install
 ```
 
 ## flake8
@@ -181,4 +182,18 @@ Make a graph *.py files against 'complexity' (cyclomatic operator) metrics:
 ```console
 python -m wily graph images/ complexity
 python -m wily graph pdfs/ complexity
+```
+
+## pre-commit
+
+You can see all options for the script, executing the following command:
+
+```console
+pre-commit --help
+```
+
+Examples of the use:
+
+```console
+pre-commit run --all-files
 ```
