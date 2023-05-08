@@ -139,3 +139,18 @@ Examples of the use:
 python -m bandit -r images/extract_text.py
 python -m bandit -r pdfs/extract_text.py
 ```
+
+## wily
+
+You can see all options for the script, executing the following command:
+
+```console
+python -m wily --help
+```
+
+Examples of the use:
+
+```console
+python -m wily build images/
+python -m wily build pdfs/
+```
