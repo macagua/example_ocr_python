@@ -1,5 +1,6 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
+# See a Spanish tutorial for more information https://seraph13.medium.com/desarrollar-c%C3%B3digo-python-limpio-con-pre-commit-6d760a39aa08
 exclude: |
     (?x)^(
         bnk/|
