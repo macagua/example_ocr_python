@@ -148,9 +148,37 @@ You can see all options for the script, executing the following command:
 python -m wily --help
 ```
 
-Examples of the use:
+## Build the wily cache.
 
 ```console
 python -m wily build images/
 python -m wily build pdfs/
+```
+
+### Show metrics for a given file.
+
+Graph test.py against 'loc', 'sloc' and 'comments' (raw operator) metrics:
+
+```console
+python -m wily report images/extract_text.py loc sloc comments --message
+python -m wily report pdfs/extract_text.py loc sloc comments --message
+```
+
+### Graph a specific metric for a given file
+
+Graph a specific metric for a given file, if a path is given, all files
+within path will be graphed.
+
+Make a graph *.py files against 'loc' and 'sloc' (raw operator) metrics:
+
+```console
+python -m wily graph images/ loc sloc
+python -m wily graph pdfs/ loc sloc
+```
+
+Make a graph *.py files against 'complexity' (cyclomatic operator) metrics:
+
+```console
+python -m wily graph images/ complexity
+python -m wily graph pdfs/ complexity
 ```
