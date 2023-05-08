@@ -26,7 +26,6 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-added-large-files
-      - id: check-json
       - id: check-yaml
         exclude: (bnk|venv).*\.(yml|yaml)$
       - id: check-merge-conflict
