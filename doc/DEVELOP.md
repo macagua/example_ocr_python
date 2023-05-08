@@ -124,3 +124,18 @@ Examples of the use:
 python -m mypy images/extract_text.py
 python -m mypy pdfs/extract_text.py
 ```
+
+## bandit
+
+You can see all options for the script, executing the following command:
+
+```console
+python -m bandit --help
+```
+
+Examples of the use:
+
+```console
+python -m bandit -r images/extract_text.py
+python -m bandit -r pdfs/extract_text.py
+```
