@@ -197,3 +197,9 @@ Examples of the use:
 ```console
 pre-commit run --all-files
 ```
+
+## Ignore commit verification
+
+```console
+git commit --interactive --no-verify
+```
